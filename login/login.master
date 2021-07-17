@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="login.master.cs" Inherits="ModernProje.login.login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="shortcut icon" href="../img/favicon/modernfav.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../img/favicon/modernfav.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+
+    <script src="../global_assets/js/main/jquery.min.js"></script>
+    <script src="../global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</head>
+<body style="background-image: url(../img/others/loginbg.png);">
+    <form id="form1" runat="server">
+        <div>
+            <div style="height: 120px"></div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

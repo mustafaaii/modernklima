@@ -1,0 +1,377 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="front.master.cs" Inherits="ModernProje.front" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+
+
+    <link runat="server" rel="shortcut icon" href="~/img/favicon/favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="~/img/favicon/favicon.ico" type="image/ico" />
+
+    <asp:Label id="deneme" runat="server" visable="false"></asp:Label>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7COpen+Sans:400,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/theme-elements.css">
+    <link rel="stylesheet" href="/css/theme-blog.css">
+    <link rel="stylesheet" href="/css/theme-shop.css">
+    <link rel="stylesheet" href="/css/demos/demo-landing.css">
+    <link rel="stylesheet" href="/css/skins/skin-landing.css">
+    <script src="/master/style-switcher/style.switcher.localstorage.js"></script>
+    <link rel="stylesheet" href="/css/custom.css">
+    <script src="/vendor/modernizr/modernizr.min.js"></script>
+
+    <%--SLİDER OPTIONS--%>
+    <link rel="stylesheet" type="text/css" href="/assets/lib/owl.carousel/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+
+    <%--ÜRÜNLER SAYFASI OPTIONS--%>
+    <link href="/panel/assets/css/components.min.css" rel="stylesheet" />
+    <link href="/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/edge/css/theme-admin-extension.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <%--CHAT CSS OPTIONS--%>
+    <link href="/css/chat.css" rel="stylesheet" />
+
+
+    <%--SOSYAL MEDYA İKON ARKA PLANI--%>
+    <style>
+        .circlebg {
+            width: 30px;
+            height: 30px;
+            padding: 7px;
+            background: #0088cc;
+            -moz-border-radius: 70px;
+            -webkit-border-radius: 70px;
+            border-radius: 70px;
+            color: #ffffff;
+        }
+    </style>
+    <style>
+        @media screen and (max-width: 500px) {
+            .footermobile {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            .footermobile {
+                display: block;
+            }
+        }
+    </style>
+    <%--RESİM YÜKLEME ARACI--%>
+    <link href="panel/dropify/css/dropify.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <h1 hidden>Modern Klima Teknolojileri Haier, Klima, Soğutma ve Isıtma Sistemler </h1>
+    <h2 hidden>Modern Klima Teknolojileri Haier, Klima, Soğutma ve Isıtma Sistemler </h2>
+    <h3 hidden>Modern Klima Teknolojileri Haier, Klima, Soğutma ve Isıtma Sistemler </h3>
+    <h4 hidden>Modern Klima Teknolojileri Haier, Klima, Soğutma ve Isıtma Sistemler </h4>
+    <h5 hidden>Modern Klima Teknolojileri Haier, Klima, Soğutma ve Isıtma Sistemler </h5>
+    <h6 hidden>Modern Klima Teknolojileri Haier, Klima, Soğutma ve Isıtma Sistemler </h6>
+    <form id="form1" runat="server">
+        <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': false, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 50}">
+            <div class="header-body" style="margin-bottom: -25px">
+                <div class="header-container container">
+                    <div class="header-row">
+                        <div class="header-column">
+                            <div class="header-row">
+                                <div class="header-logo">
+                                    <a href="/anasayfa">
+                                        <img alt="modernklima" height="45" src="/img/logo/modernlogo.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-column justify-content-end">
+                            <div class="header-row">
+                                <div class="header-nav header-nav-links order-2 order-lg-1">
+                                    <div class="header-nav-main header-nav-main-square header-nav-main-effect-5 header-nav-main-sub-effect-1">
+                                        <nav class="collapse">
+                                            <ul class="nav nav-pills" id="mainNav">
+                                                <li><a id="anasayfa" runat="server" style="text-decoration: none; text-transform: capitalize;" href="/anasayfa">Anasayfa</a></li>
+                                                <li><a id="kurumsal" runat="server" style="text-decoration: none; text-transform: capitalize" href="/kurumsal">Kurumsal</a></li>
+                                                <li><a id="urunlerimiz" runat="server" style="text-decoration: none; text-transform: capitalize" href="/urunlerimiz">Ürünlerimiz</a></li>
+                                                <li><a id="servis" runat="server" style="text-decoration: none; text-transform: capitalize" href="/servis-ve-saticilar">Servisler & Satıcılar</a></li>
+                                                <li><a id="haberler" runat="server" style="text-decoration: none; text-transform: capitalize" href="/haberler">Haberler</a></li>
+                                                <li><a id="destek" runat="server" style="text-decoration: none; text-transform: capitalize" href="/destek">Destek</a></li>
+                                                <li><a id="bizeulasin" runat="server" style="text-decoration: none; text-transform: capitalize" href="/bize-ulasin">Bize Ulaşın</a></li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-item dropdown-toggle" style="color: #e51c20"><b>Bayi & Servis Girişi</b></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="http://servis.modernklima.com.tr/(S(4n5za3keddxxrojzuxbsqych))/My/myLogin.aspx?sayfa=1" target="_blank">Sisteme Giriş</a></li>
+                                                        <li><a class="dropdown-item" href="https://modernklimabayi.com/" target="_blank">Online Ödeme</a></li>
+                                                    </ul>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <a class="btn header-btn-collapse-nav border-radius-0" style="font-weight: 600" data-toggle="collapse" data-target=".header-nav-main nav">
+                                        <i class="fas fa-bars border-radius-0"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="modal fade" id="popumessage" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" style="font-size: 16px;">Modern Klima Teknolojileri <b>Hızlı Mesaj</b></h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <asp:Label ID="Uyari" runat="server"></asp:Label>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div><b>Adınız:</b></div>
+                                                <asp:TextBox ID="HizliMesajAdiniz" runat="server" CssClass="form-control border-radius-0"></asp:TextBox>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div><b>Soyadınız:</b></div>
+                                                <asp:TextBox ID="HizliMesajSoyadiniz" runat="server" CssClass="form-control border-radius-0"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div><b>Mail Adresiniz:</b></div>
+                                                <asp:TextBox ID="HizliMesajMail" runat="server" CssClass="form-control border-radius-0" placeholder="mail@mail.com"></asp:TextBox>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div><b>Telefon Numaranız:</b></div>
+                                                <asp:TextBox ID="HizliTelefon" runat="server" CssClass="form-control border-radius-0" placeholder="Telefon Numaranız"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <br />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div><b>Konu:</b></div>
+                                        <asp:DropDownList ID="HizliMesajKonu" CssClass="form-control border-radius-0" runat="server" AppendDataBoundItems="true">
+                                            <asp:ListItem Value="0">Konu Seçiniz</asp:ListItem>
+                                            <asp:ListItem Value="1">Muhasebe</asp:ListItem>
+                                            <asp:ListItem Value="2">Halka İlişkiler</asp:ListItem>
+                                            <asp:ListItem Value="3">Proje</asp:ListItem>
+                                            <asp:ListItem Value="4">Satış</asp:ListItem>
+                                            <asp:ListItem Value="5">Bayi</asp:ListItem>
+                                        </asp:DropDownList>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div><b>Mesaj Başlığı:</b></div>
+                                                <asp:TextBox ID="HizliMesajBaslik" runat="server" CssClass="form-control border-radius-0"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 pt-3">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div><b>Mesajınız:</b></div>
+                                                <textarea id="HizliMesajIcerik" runat="server" class="form-control border-radius-0" cols="20" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <br />
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-12 pb-3"><b>Size Nasıl Ulaşalım:</b></div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input type="checkbox" id="MesajIle" runat="server" class="form-input-styled mr-2"><label class="mr-2"></label>Mail  İle
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input type="checkbox" id="TelefonIle" runat="server" class="form-input-styled mr-2"><label class="mr-2"></label>Telefon İle
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 pt-5">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                              <%--  <p style="font-size:12px;line-height:16px">Lütfen Aşağıdaki Doğrulma Kodunu Giriniz.</p>--%>
+
+
+                                                      <div class="g-recaptcha" data-sitekey="6Lek7uwZAAAAAM6jW9BNZyPc0AS8reZm5nqEOVS2"></div>
+      <br/>
+      
+                                            </div>
+<%--                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <asp:Label ID="Label2" runat="server" Text="Kod Üret" Style="font-size: 11px;height:30px; background-color: aliceblue" CssClass=" form-control text-center  border-radius-0"></asp:Label><br />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <button id="button" runat="server" class="btn btn-primary btn-xs border-radius-0" onserverclick="button_ServerClick">KODU YENİLE</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                   <div class="form-group">
+                                                    <asp:TextBox ID="capcha" CssClass="form-control border-radius-0" runat="server" placeholder="Kodu Giriniz"></asp:TextBox>
+                                                </div>
+                                            </div>--%>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <br />
+                                <asp:Label ID="Label1" runat="server"></asp:Label>
+                            </div>
+                            <div class="modal-footer">
+                                <asp:Button ID="Button1" CssClass="btn btn-primary btn-lg border-radius-0" OnClick="Button1_Click" runat="server" Text="Mesajı Gönder" Style="font-size: 12px" />
+                                <button type="button" class="btn btn-light btn-sm border-radius-0" data-dismiss="modal">Kapat</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <footer id="footer" class="responsive-tabs-container footermobile ">
+            <div class="container my-4">
+                <asp:Repeater ID="FooterRepet" runat="server">
+                    <ItemTemplate>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 col-sm-12">
+                                <h5 class="text-4 text-transform-none font-weight-light text-color-light"><%#Eval("footer1_baslik") %></h5>
+                                <div style="text-wrap: normal"><%#Eval("footer1_icerik") %></div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 col-sm-12">
+                                <h5 class="text-4 text-transform-none font-weight-light text-color-light"><%#Eval("footer2_baslik") %></h5>
+                                <div style="text-wrap: normal"><%#Eval("footer2_icerik") %></div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 col-sm-12">
+                                <h5 class="text-4 text-transform-none font-weight-light text-color-light "><%#Eval("footer3_baslik") %></h5>
+                                <div style="text-wrap: normal"><%#Eval("footer3_icerik") %></div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-3 col-sm-12">
+                                <h5 class="text-4 text-transform-none font-weight-light text-color-light"><%#Eval("footer4_baslik") %></h5>
+                                <ul class="header-social-icons social-icons">
+                                    <a href="<%#Eval("Facebook") %>"><i class="icon-facebook2 circlebg"></i></a>
+                                    <a href="<%#Eval("Instagram") %>"><i class="icon-instagram circlebg"></i></a>
+                                    <a href="<%#Eval("Linkedin") %>"><i class="icon-linkedin circlebg"></i></a>
+                                    <a href="<%#Eval("Twitter") %>"><i class="icon-twitter circlebg"></i></a>
+                                    <a href="<%#Eval("Youtube") %>"><i class="icon-youtube circlebg"></i></a>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
+
+            <div class="container">
+                <div class="footer-copyright footer-copyright-style-2">
+                    <div class="py-2">
+                        <div class="row py-4">
+                            <div class="col d-flex align-items-center justify-content-center mb-lg-0">
+                                <div class="col-lg-3">
+                                    <p>© Copyright 2020. Modern Klima Teknolojileri</p>
+                                </div>
+                                <div class="col-lg-7 text-center" style="font-size: 11px">
+                                    <a href="#" class="mr-2">Kullanım Koşulları</a> |
+                                    <a href="#" class="mr-2">Gizlilik</a> |
+                                    <a href="#" class="mr-2">Bilgi Toplumu Hizmetleri</a> |
+                                    <a href="/kvkk" class="mr-2">Kişisel Verilerin Korunması Kanunu</a>
+                                </div>
+                                <div class="col-lg-2" style="font-size: 11px; text-align: right">
+                                    <a href="http://verilabbilisim.com/" target="_blank">Verilab Bilişim Teknolojileri</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <asp:Label ID="LoadPage" runat="server" Visible="true"></asp:Label>
+        <a runat="server" id="autoclick" class="open-button btn-link" data-toggle="modal" data-target="#popumessage" style="font-size: 12px;">
+            <img src="/img/hizlimesajicon.png" class="float-left" height="60" />
+        </a>
+
+    </form>
+    <%--SİTE OPTIONS--%>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/css/edge/js/theme.admin.extension.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/common/common.min.js"></script>
+    <script src="/vendor/popper/umd/popper.min.js"></script>
+    <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/theme.init.js"></script>
+
+
+    <%--SLİDER OPTIONS--%>
+    <script src="/assets/lib/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/owl.carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+
+
+    <%--ÜRÜNLER SAYFASI--%>
+
+    <script src="/global_assets/js/main/jquery.min.js"></script>
+    <script src="/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="/global_assets/js/demo_pages/ecommerce_product_list.js"></script>
+
+
+
+    <%--RESİM YÜKLEME ARACI JS--%>
+
+    <script src="/panel/dropify/drophy.js"></script>
+    <script src="/panel/dropify/js/dropify.min.js"></script>
+</body>
+</html>
